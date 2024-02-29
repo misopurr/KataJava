@@ -1,2 +1,2 @@
 # KataJava
-All my Kata in the Java language
+All my Kata from codewars in the Java language
