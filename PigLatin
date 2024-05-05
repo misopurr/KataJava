@@ -1,0 +1,24 @@
+public class PigLatin {
+    public static String pigIt(String str) { 
+      
+      String result = " ";
+          
+      String[] words = str.split(" ");
+      
+        for (String word : words) {
+   
+       char firstLetter = word.charAt(0);
+       String remainingLetters = word.substring(1);
+        
+        Character lastCharacter = word.charAt(word.length() - 1);
+          
+          if (!Character.isLetterOrDigit(lastCharacter)) {
+          result += lastCharacter;
+          
+         } else  {
+          result += (remainingLetters + firstLetter + "ay" + " ");
+   }      
+         
+  } return result.trim();  
+ }
+}
