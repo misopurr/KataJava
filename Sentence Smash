@@ -1,0 +1,16 @@
+import java.util.Arrays;
+
+/**
+ * This class provides a method to combine an array of words into a sentence.
+ */
+public class SmashWords {
+    /**
+     * Smash the words into a sentence with spaces in between.
+     * 
+     * @param words the array of words
+     * @return the sentence
+     */
+    public static String smash(String[] words) {
+        return String.join(" ", words);
+    }
+}
