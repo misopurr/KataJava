@@ -1,0 +1,17 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Kata {
+  
+  public static List<Object> filterList(final List<Object> list) {
+    List<Object> filteredList = new ArrayList<>(); // Create a new list to store filtered integers
+    
+    for (Object obj : list) { // Iterate through each element in the input list
+        if (obj instanceof Integer) { // Check if the element is an Integer
+            filteredList.add(obj); // If it is, add it to the filtered list
+        }
+    }
+    
+    return filteredList; // Return the list containing only integers
+  }
+}
